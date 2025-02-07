@@ -4,5 +4,13 @@ GET http://localhost:8383/
 ### TEST DASHBOARD ROUTE
 GET http://localhost:8383/dashboard
 
-##TEST DATA ENDPOINT
+###TEST DATA ENDPOINT
 GET http://localhost:8383/api/data
+
+### POST NEW USER
+POST http://localhost:8383/api/data
+Content-Type: application/json
+
+{
+    "name": "Dinesh"
+}
