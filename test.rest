@@ -1,0 +1,8 @@
+### TEST GET / WEBSITE (REST Client by Huachao Mao)
+GET http://localhost:8383/
+
+### TEST DASHBOARD ROUTE
+GET http://localhost:8383/dashboard
+
+##TEST DATA ENDPOINT
+GET http://localhost:8383/api/data
