@@ -2,6 +2,7 @@
   "name": "chapter_3",
   "version": "1.0.0",
   "main": "index.js",
+  "type": "commonjs",
   "scripts": {
     "dev_old": "nodemon server.js",
     "dev": "node --env-file=.env --experimental-strip-types --experimental-sqlite ./src/server.js"
