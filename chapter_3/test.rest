@@ -1,0 +1,22 @@
+### GET /
+GET http://localhost:8383/
+
+### Register a new users POST /AUTH/REGISTER
+POST http://localhost:8383/auth/register
+Content-Type: application/json
+
+{
+    "username": "",
+    "password": ""
+}
+
+### Login a user POST /AUTH/LOGIN
+POST http://localhost:8383/auth/login
+Content-Type: application/json
+
+{
+    "username": "",
+    "password": ""
+}
+
+### Add todo
