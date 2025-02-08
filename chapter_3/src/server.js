@@ -4,6 +4,7 @@ const PORT = process.env.PORT || 5000;
 const path = require('path');
 const authRoutes = require('./routes/authRoutes.js');
 const todoRoutes = require('./routes/todoRoutes.js');
+const authMiddleware = require('./middleware/authMiddleware.js');
 
 //Middleware
 app.use(express.json());
@@ -19,7 +20,7 @@ app.get('/', (req, res) => {
 
 // Routes
 app.use('/auth', authRoutes);
-app.use('/todos', todoRoutes);
+app.use('/todos', authMiddleware, todoRoutes);
 
 app.listen(PORT, () => {
    console.log(`Server started on port ${PORT}`);
