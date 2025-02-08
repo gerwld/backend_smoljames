@@ -1,0 +1,18 @@
+{
+  "name": "chapter_3",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev_old": "nodemon server.js",
+    "dev": "node --env-file=.env --experimental-strip-types --experimental-sqlite ./src/server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "A fullstack todo application that utilizes NodeJS backend, a SQLite db, and JWT auth",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "express": "^4.21.2",
+    "jsonwebtoken": "^9.0.2"
+  }
+}
